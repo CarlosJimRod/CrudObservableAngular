@@ -1,0 +1,15 @@
+<h1>Registro Material</h1>
+<div *ngIf="material$">
+  <table class="table table-hover">
+    <tbody>
+    <tr *ngFor="let material of material$ | async">
+      <td>{{material.id}}</td>
+      <td>{{material.nombre}}</td>
+      <td>{{material.descripcion}}</td>
+      <td>{{material.precio}}</td>
+      <td><input type="button" value="Cambiar Precio" (click)="modifyPrecio(material.id)"></td>
+      <td><input type="button" value="Eliminar Registro" (click)="deleteMaterial(material.id)"></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,16 @@
+<h1>Añadir Material</h1>
+<table>
+  <tr>
+    <td>Nombre: </td>
+    <td><input type="text" [(ngModel)]="nombre"></td>
+  </tr>
+  <tr>
+    <td>Descipcion: </td>
+    <td><input type="text" [(ngModel)]="descripcion"></td>
+  </tr>
+  <tr>
+    <td>Precio: </td>
+    <td><input type="text" [(ngModel)]="precio"></td>
+  </tr>
+</table>
+<input type="button" (click)="saveMaterial()" value="Guardar">
